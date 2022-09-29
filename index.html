@@ -4,10 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+  <main class="flex justify-center items-center h-screen bg-[url('img/fod.png')] bg-cover bg-no-repeat pixelated">
+    <div class="flex flex-wrap items-center justify-around w-screen">
+      <div class="text-center bg-pink-100 bg-opacity-90 rounded shadow-lg p-10">
+        <h1 class="text-pink-400 text-5xl md:text-8xl font-bold mb-10">Bem vindo!</h1>
+        <p class="text-pink-900 text-xl mb-5">Para acessar as páginas clique nos botões abaixo:</p>
+        <div class="flex flex-wrap justify-center">
+          
+          <a href="#" class="mb-3 md:mb-0 bg-pink-400 px-6 py-2 rounded border-2 border-pink-300 text-xl shadow-md text-white mx-2 hover:bg-pink-300 active:bg-pink-500 font-bold">Login</a>
+          <a href="./cadastro.html" class="mb-3 md:mb-0 bg-pink-400 px-6 py-2 rounded border-2 border-pink-300 text-xl shadow-md text-white mx-2 hover:bg-pink-300 active:bg-pink-500 font-bold">Cadastro</a>
+          <a href="#" class="mb-3 md:mb-0 bg-pink-400 px-6 py-2 rounded border-2 border-pink-300 text-xl shadow-md text-white mx-2 hover:bg-pink-300 active:bg-pink-500 font-bold">Visualizar</a>
+        </div>
+      </div>
+      <img src="img/kirby.png" alt="" class="w-96">
+    </div>
+
+  </main>
 </body>
 </html>
