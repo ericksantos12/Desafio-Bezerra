@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="flex items-center justify-center h-screen bg-[url('img/vv-2-hills.png')] bg-cover bg-no-repeat pixelated">
+    <!-- cria card -->
+    <div class="bg-pink-100 w-96 p-5 rounded shadow-lg">
+
+      <!-- imagem -->
+      <div class="flex items-center justify-center mb-4">
+        <img src="img/kirby-hi-kss.gif" alt="Kirby - personagem de video game" class="w-20 h-20">
+      </div>
+      <h1 class="mb-6 text-center font-bold text-2xl text-pink-700">Tela de Cadastro</h1>
+
+    <!-- formulario -->
+    <form action="processa.php" method="POST">
+        
+        <label for="nome">Nome</label>
+        <input id="nome" type="nome" name="nome" id="nome" class="w-full bg-pink-200 rounded outline-none py-2 px-1 mb-5 focus:bg-pink-300">
+
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" id="email" class="w-full bg-pink-200 rounded outline-none py-2 px-1 mb-5 focus:bg-pink-300">
+
+        <label for="senha">Senha</label>
+        <input id="senha" type="senha" name="senha" id="senha" class="w-full bg-pink-200 rounded outline-none py-2 px-1 mb-5 focus:bg-pink-300">
+
+        <div class="flex justify-between">
+          
+          <div class="flex items-center py-2 px-1">
+            <a href="./">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 stroke-pink-400 hover:stroke-pink-500">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+              </svg>
+            </a>
+          </div>        
+          
+          <button type="submit" class="bg-pink-300 p-2 rounded font-semibold hover:bg-pink-400 duration-75">Registrar</button>
+        
+        </div>
+        
+      </form>
+    </div>
+
+  </main>
+  
+</body>
+</html>
